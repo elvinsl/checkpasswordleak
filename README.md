@@ -1,10 +1,23 @@
-# checkpasswordleak
-Search across multiple data breaches to see if your password address has been leaked
+# CheckPass
 
+Search across multiple data breaches to see if your password address has been leaked.
 
-## Install
-$ git clone https://github.com/elvinsl/checkpasswordleak.git
+## Dependencies
 
-$ cd checkpasswordleak/
+- requests
 
-$ python3 checkpass.py pass1 pass2 ...
+```bash
+pip install requests
+```
+
+## Installation
+
+```bash
+git clone https://github.com/elvinsl/checkpasswordleak.git
+```
+
+## Usage
+
+```bash
+python3 checkpass.py pass1 pass2 ...
+```
