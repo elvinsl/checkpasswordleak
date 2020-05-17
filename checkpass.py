@@ -3,6 +3,17 @@ import hashlib
 import sys
 
 
+def banner():
+    print('''
++-----------------------------------------------+
+| checkpass find out if your password leaked    | 
+| checkpass v.0.1                               |
+| Author: Elvin --> 'elvinsl'                   |
+| Github: https://github.com/elvinsl/checkpass  |
++-----------------------------------------------+  
+    ''')
+
+
 def request_api_data(first_five_char):
     url = f'https://api.pwnedpasswords.com/range/{first_five_char}'
     r = requests.get(url)
@@ -38,6 +49,7 @@ def main(args):
 
 
 if __name__ == '__main__':
+    banner()
     if len(sys.argv) >= 2:
         sys.exit(main(sys.argv[1:]))
     else:
